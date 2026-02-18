@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=1cm}
+\usepackage{booktabs} % Для красивого оформления таблиц
+\usepackage{amsmath} % Для математических символов
+\usepackage{graphicx}
+\graphicspath{{pictures/}}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage[unicode]{hyperref}
+
+\begin{document}
+
+
+\begin{table}[h!]
+\centering
+\caption{Угол Тое по оборотам при заполнениях 25\%, 35\% и 40\% и скоростях 55\%, 59\% и 69\% от критической}
+\label{tab:mass_toe}
+\begin{tabular}{ccccccccc}
+\toprule
+\textbf{25\_55} & \textbf{25\_59} & \textbf{25\_69} & \textbf{35\_55} & \textbf{35\_59} & \textbf{35\_69} 
+& \textbf{40\_55} & \textbf{40\_59} & \textbf{40\_69} \\
+\midrule
+244.80 & 242.40 & 244.70 & 234.00 & 234.96 & 236.53 & 230.85 & 228.96 & 229.44 \\
+244.13 & 244.56 & 245.80 & 234.00 & 236.16 & 236.53 & 229.05 & 230.64 & 234.56 \\
+244.13 & 244.56 & 247.50 & 234.90 & 237.60 & 240.46 & 229.05 & 230.64 & 233.15 \\
+244.13 & 246.70 & 248.34 & 232.65 & 236.64 & 238.20 & 229.05 & 228.48 & 232.31 \\
+244.58 & 246.70 & 250.00 & 235.58 & 236.64 & 240.19 & 230.63 & 228.96 & 234.56 \\
+243.90 & 244.80 & 246.60 & 235.58 & 235.44 & 238.50 & 228.38 & 230.40 & 232.60 \\
+243.00 & 244.80 & 246.60 & 234.45 & 233.76 & 235.69 & 229.50 & 230.40 & 232.60 \\
+243.00 & 245.76 & 245.81 & 234.45 & 234.96 & 238.50 & 230.85 & 230.40 & 233.44 \\
+243.00 & 244.32 & 246.65 & 234.45 & 234.96 & 238.50 & 231.30 & 228.96 & 233.44 \\
+245.47 & 244.32 & 246.65 & 235.35 & 235.92 & 238.50 & 228.85 & 229.92 & 234.00 \\
+243.45 & 244.32 & 246.10 & 235.35 & 235.92 & 238.50 & 230.18 & 230.64 & 229.80 \\
+\midrule
+\multicolumn{9}{c}{\textbf{Средние значения}} \\
+\midrule
+243.92 & 244.68 & 246.90 & 234.68 & 235.66 & 238.10 & 229.79 & 229.82 & 232.75 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{figure}[ht]
+                \centering
+                \includegraphics[width=\linewidth]{Toe_filling_55.png}
+                \caption{Зависимость угла Тое от заполнения при 55\% от критической скорости}
+                \label{fig:sub1}
+    \end{figure}
+
+    \begin{figure}[ht]
+                \centering
+                \includegraphics[width=\linewidth]{Toe_filling_59.png}
+                \caption{Зависимость угла Тое от заполнения при 59\% от критической скорости}
+                \label{fig:sub1}
+    \end{figure}
+
+    \begin{figure}[ht]
+                \centering
+                \includegraphics[width=\linewidth]{Toe_filling_69.png}
+                \caption{Зависимость угла Тое от заполнения при 69\% от критической скорости}
+                \label{fig:sub1}
+    \end{figure}
+
+\end{document}
